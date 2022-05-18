@@ -23,7 +23,12 @@ public class Exercise_07 {
         // assign input to variable as int
         int days = scanner.nextInt();
 
-        // write completed code here
+        long seconds = (long)days * 60 * 60 * 24;
+        if (days == 1) {
+            System.out.println("The number of seconds in 1 day is " + seconds + ".");
+        } else {
+            System.out.println("The number of seconds in " + days + " days is " + seconds + ".");
+        }
 
     }
 }
