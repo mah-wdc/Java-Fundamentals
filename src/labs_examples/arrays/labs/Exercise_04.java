@@ -1,5 +1,5 @@
 package labs_examples.arrays.labs;
-
+import java.util.*;
 /**
  *  Irregular Arrays
  *
@@ -9,5 +9,14 @@ package labs_examples.arrays.labs;
  */
 
 public class Exercise_04 {
-
+    public static void main(String[] args) {
+        int[][] irregularArray = new int[3][6];
+        for (int i = 0; i < irregularArray.length; i++) {
+            for (int j = 0; j < irregularArray[i].length; j++) {
+                irregularArray [i] [j] = i + j;
+                System.out.print(irregularArray[i][j] + " | ");
+            }
+            System.out.println();
+        }
+    }
 }

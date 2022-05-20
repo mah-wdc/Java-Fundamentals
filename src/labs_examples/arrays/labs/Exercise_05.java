@@ -1,4 +1,5 @@
 package labs_examples.arrays.labs;
+import java.util.*;
 
 /**
  *  Traversing Arrays Backwards
@@ -9,5 +10,15 @@ package labs_examples.arrays.labs;
  */
 
 public class Exercise_05 {
+    public static void main(String[] args) {
+        int[] array = new int [10];
+
+        for (int i = 0; i < array.length; i++){
+            array[i] = i;
+        }
+        for (int j = array.length-1; j >= 0; j-=2) {
+            System.out.print(array[j] + " | ");
+        }
+    }
 
 }
