@@ -19,17 +19,17 @@ public class Exercise_06 {
         int temp;
 
         System.out.print("Contents of array before for loop - ");
-        for(int a : nums){
-            System.out.print(a + " ");
+        for (int j : nums) {
+            System.out.print(j + " ");
         }
         System.out.println();
 
-        for (int i = 0; i < nums.length / 2; i++) { 
-            temp = nums[i]; 
-            nums[i] = nums[nums.length - i - 1]; 
-            nums[nums.length - i - 1] = temp;
+        for (int x = 0; x < nums.length / 2; x++){
+            temp = nums[x];
+            nums[x] = nums[nums.length - x - 1];
+            nums[nums.length - x - 1] = temp;
         }
-        
+
         System.out.print("Contents of array after for loop - ");
         for(int i : nums){
             System.out.print(i + " ");
