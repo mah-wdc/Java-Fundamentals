@@ -10,4 +10,30 @@ package labs_examples.arrays.labs;
  *
  */
 public class Exercise_07 {
+    public static void main(String[] args) {
+        ArrayList <String> letters = new ArrayList<>();
+        letters.add("A");
+        letters.add("B");
+        letters.add("C");
+        letters.add("D");
+        letters.add("E");
+        letters.add("F");
+        letters.add("G");
+        for (String loop : letters) {
+            System.out.print(loop + " ");
+        }
+        letters.remove(2);
+        System.out.println();
+        for (String loop : letters) {
+            System.out.print(loop + " ");
+        }
+        letters.add(2, "C");
+        System.out.println();
+        for (String loop : letters) {
+            System.out.print(loop + " ");
+        }
+        System.out.println();
+        System.out.println(letters.get(2));
+        System.out.println(letters.size());
+    }
 }
