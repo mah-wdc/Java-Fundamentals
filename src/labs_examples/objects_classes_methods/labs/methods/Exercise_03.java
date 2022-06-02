@@ -10,11 +10,20 @@ package labs_examples.objects_classes_methods.labs.methods;
 public class Exercise_03 {
 
     public static void main(String[] args) {
-//        int x = factorial(5);
-//        System.out.println(x);
+        int x = factorial(5);
+        System.out.println(x);
 //        should print 120
     }
 
+    public static int factorial(int y){
+        int sum;
+        if (y == 1) {
+            return 1;
+        } else {
+            sum = (factorial(y - 1) * y);
+        }
+        return sum;
+    }
 
 
 
