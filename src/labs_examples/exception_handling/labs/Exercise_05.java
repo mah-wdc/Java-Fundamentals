@@ -1,6 +1,3 @@
-package labs_examples.exception_handling.labs;
-
-import java.util.Arrays;
 
 /**
  * Exception Handling Exercise 5:
@@ -9,10 +6,19 @@ import java.util.Arrays;
  *
  */
 
-class Example {
+class Exercise_05 {
 
     public static void main(String[] args) {
+        try {
+            division(6,3);
+        } catch (ArithmeticException exc){
+            System.out.println("Can not divide by zero");
+        }
+        System.out.println("<< End of program >>");        
 
     }
 
+    public static void division(int a, int b) throws ArithmeticException{
+        System.out.println("The answer is " + a/b);
+    }
 }
